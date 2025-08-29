@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="logo">HTML Forms</h1>
+        <p class="batch-name">MERN Batch #1 & #2</p>
+    </header>
+    <main>
+        <form>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter you name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" id="age" placeholder="Enter you age">
+            </div>
+            <div>
+                <label for="visit">How often do you visit the library?</label>
+                <select id="visit">
+                    <option value="daily">Daily</option>
+                    <option value="weekly">Weekly</option>
+                    <option value="monthly">Monthly</option>
+                </select>
+            </div>
+            <div>
+                <h1>When you visit, are you usually able to find what you are looking for?</h1>
+                <input type="radio" id="always" name="fav_language" value="always">
+                <label for="always">always</label>
+                <input type="radio" id="sometimes" name="fav_language" value="sometimes">
+                <label for="sometimes">sometimes</label>
+                <input type="radio" id="rarely" name="fav_language" value="rarely">
+                <label for="rarely">rarely</label>
+                <input type="radio" id="never" name="fav_language" value="never">
+                <label for="never">never</label>
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+                <label for="improve">Anything you like to see improve?</label>
+                <textarea id="improve"></textarea>
+            </div>
+        </form>
+    </main>
+    <footer></footer> 
+</body>
+</html>
