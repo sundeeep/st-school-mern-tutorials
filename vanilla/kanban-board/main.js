@@ -69,28 +69,3 @@ function createBacklogsContainer(backlog, index) {
 
 backlogs.map((backlog, index) => createBacklogsContainer(backlog, index))
 backlogSection.appendChild(backlogTasksContent);
-
-let SundeeepsWhatsappGroups = [
-    {
-    name: "MERN Batch #2",
-    membersCount: "17",
-    createdAt: "28/08/2025"
-},
-    {
-    name: "MERN Batch #3",
-    membersCount: "17",
-    createdAt: "28/08/2025"
-},
-{
-    name: "ST Coordination",
-    membersCount: "17",
-    createdAt: "28/08/2025"
-},
-{
-    name: "Drugboard",
-    membersCount: "17",
-    createdAt: "28/08/2025"
-}
-]
-
-console.log(SundeeepsWhatsappGroups)
