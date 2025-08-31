@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kanban Board ~ Software Engineering</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="main.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
+    <script src="backend.js" defer></script>
 </head>
 <body>
     <h1>Kanban Board for Software Engineering Project</h1>
@@ -22,8 +23,23 @@
                 <h3>todos</h3>
                 <button id="create-todo" class="editor-form-open-btn">+ Create Todo</button>
             </div>
+            <div>
+                <form id="simple-form">
+                    <div>
+                        <label for="name">Name</label>
+                        <input id="name-input" type="text" id="name">
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input id="description-input" type="text" id="description">
+                    </div>
+                    <button id="Submit-button">Submit</button>
+                </form>
+            </div>
         </section>
-        <section class="task-container" id="uxuidesign"></section>
+        <section class="task-container" id="uxuidesign">
+            
+        </section>
         <section class="task-container" id="frontend"></section>
         <section class="task-container" id="backend"></section>
         <section class="task-container" id="testing"></section>
