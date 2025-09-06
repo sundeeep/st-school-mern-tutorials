@@ -1,3 +1,5 @@
+// main.js
+
 let backlogSection = document.querySelector("#backlog");
 let createBacklogButton = document.querySelector("#create-backlog");
 
@@ -41,31 +43,3 @@ createBacklogButton.addEventListener("click", () => {
 
     backlogSection.appendChild(createTaskForm);
 })
-
-// 1. Get the backlogs data from the localStorage.
-let backlogs = localStorage.getItem("backlogs");
-backlogs = JSON.parse(backlogs);
-console.log(backlogs);
-
-function renderBacklog(backlog, index) {
-    console.log(index, backlog)
-    let article = document.createElement("article");
-    article.setAttribute("id", index)
-    let h3 = document.createElement("h3");
-    h3.innerText = backlog.taskTitle;
-    let p = document.createElement("p");
-    p.innerText = backlog.taskDescription;
-    article.appendChild(h3);
-    article.appendChild(p);
-    return article;
-}
-
-let backlogTasksContent = document.createElement("div");
-
-function createBacklogsContainer(backlog, index) {
-    let article = renderBacklog(backlog, index)
-    backlogTasksContent.appendChild(article);
-}
-
-backlogs.map((backlog, index) => createBacklogsContainer(backlog, index))
-backlogSection.appendChild(backlogTasksContent);
